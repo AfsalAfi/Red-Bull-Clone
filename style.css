@@ -19,24 +19,31 @@
 /* Header */
 .navbar-header {
     position: absolute;
-    background-color: transparent;
+    /* background-color: black; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 10%;
     padding: 10px;
     color: wheat;
     z-index: 100;
 }
 
-.navbar-list-btn img {
+.navbar-header-first-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-header-first-icon img {
     height: 35px;
     width: 35px;
     padding: 5px;
-    border: 1px solid white;
+    border: 1px solid #a3abb147;
     border-radius: 30px;
-    position: relative;
-    top: -120px;
+    background: rgba(0, 0, 0, 0.193);
+    backdrop-filter: blur(10px);
 }
 
 .logo {
@@ -51,14 +58,46 @@
     justify-content: center;
 }
 
+.navbar-header-mid-section-list {
+    border: 1px solid #a3abb147;
+    color: white;
+    font-weight: 700;
+    background: rgba(0, 0, 0, 0.193);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0px 20px !important;
+    color: #fff;
+}
+
+.navbar-header-mid-section-group {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-header-mid-section-list a {
+    color: white;
+    padding: 8px 3px 8px 20px !important;
+}
+
+.navbar-header-mid-section-list img {
+    width: 20px;
+    height: 20px;
+    transform: rotate(-90deg);
+}
+
 .navbar-header-end-section {
     display: flex;
     justify-content: end;
 }
 
 .navbar-header-end-section img {
-    height: 2rem;
-    width: 2rem;
+    height: 1.7rem;
+    width: 1.7rem;
+}
+
+.navbar-header-end-section-icon {
+    margin: 10px;
 }
 
 /* Drinks-Section */
@@ -86,9 +125,11 @@
 }
 
 .drinks-section-header h4 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 400;
     color: #636c75;
+    letter-spacing: .5px;
+    line-height: 30px;
 }
 
 .drinks-section-listing {
@@ -149,10 +190,8 @@
 }
 
 .post-section-listing {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    /* display: flex;; */
+    text-align: center;
 }
 
 .post-section-card {
