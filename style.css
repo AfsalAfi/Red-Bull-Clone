@@ -65,7 +65,6 @@
 .main-section {
     background-color: #f8f8f8;
     width: 100%;
-    height: 400vh;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     position: absolute;
@@ -215,4 +214,87 @@
 .post-section-card-bottom p {
     font-size: .65rem;
     color: #666f78;
+}
+
+/* Footer */
+.footer-section {
+    width: 100%;
+    background-color: #00162b;
+    display: flex;
+    top: 395vh;
+}
+
+.footer-section p {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .8px;
+}
+
+.footer-section h5 {
+    color: #98a2ac;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.hr-in-footer {
+    display: none;
+    width: 100%;
+    color: #f8f8f8;
+}
+
+
+
+/* Small Devices (Tablets) */
+@media (max-width: 650px) {
+    .hr-in-footer {
+        display: block;
+    }
+
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer-copyright {
+        margin-top: 20px;
+    }
+}
+
+/* Medium Devices (Desktops) */
+@media (min-width: 650px) and (max-width: 991.98px) {
+    .footer-section-contents {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-section-about {
+        width: 50%;
+    }
+
+    .footer-section-more {
+        width: 50%;
+    }
+
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        padding: 60px;
+    }
+}
+
+/* Large Devices (Large Desktops) */
+@media (min-width: 992px) {
+    .footer-section-contents {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+    }
+
+    .footer-section {
+        display: flex;
+        justify-content: space-between;
+        padding: 60px;
+    }
 }
