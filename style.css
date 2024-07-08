@@ -65,11 +65,17 @@
 .main-section {
     background-color: #f8f8f8;
     width: 100%;
-    height: 200vh;
+    height: 400vh;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     position: absolute;
     top: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.drinks-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,12 +94,16 @@
 
 .drinks-section-listing {
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
 .drinks-section-products {
-    width: 20rem !important;
     height: 26rem;
+    width: 20rem;
+    padding: 0px;
+    border: 0px;
+    overflow: hidden;
     background-color: #ffffff;
     box-shadow: 0 8px 12px 0 rgba(0, 15, 30, .039);
     border-radius: 10px;
@@ -141,8 +151,9 @@
 
 .post-section-listing {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    text-align: center;
+    align-items: center;
 }
 
 .post-section-card {
@@ -150,9 +161,7 @@
     border-radius: 10px;
     background-color: #ffffff;
     height: 26rem;
-    width: 20rem !important;
-    padding: 0px;
-    border: 0px;
+    width: 20rem;
     overflow: hidden;
     text-align: start;
 }
