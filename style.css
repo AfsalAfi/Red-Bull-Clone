@@ -1,0 +1,209 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica, sans-serif;
+}
+
+/* Home Silders */
+.home-sliders {
+    position: relative;
+    height: 103vh;
+}
+
+.home-sliders img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Header */
+.navbar-header {
+    position: absolute;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    color: wheat;
+    z-index: 100;
+}
+
+.navbar-list-btn img {
+    height: 35px;
+    width: 35px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 30px;
+    position: relative;
+    top: -120px;
+}
+
+.logo {
+    height: 2rem;
+    width: 11rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar-header-mid-section {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-header-end-section {
+    display: flex;
+    justify-content: end;
+}
+
+.navbar-header-end-section img {
+    height: 2rem;
+    width: 2rem;
+}
+
+/* Drinks-Section */
+.main-section {
+    background-color: #f8f8f8;
+    width: 100%;
+    height: 200vh;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: absolute;
+    top: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.drinks-section-header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.drinks-section-header h4 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #636c75;
+}
+
+.drinks-section-listing {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.drinks-section-products {
+    width: 20rem !important;
+    height: 26rem;
+    background-color: #ffffff;
+    box-shadow: 0 8px 12px 0 rgba(0, 15, 30, .039);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.drinks-section-products h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    width: 75%;
+    text-align: center;
+}
+
+.drinks-section-products img {
+    width: 47%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 8px 12px 0 rgba(0, 15, 30, .039);
+    transition: 0.3s ease-in-out;
+}
+
+.drinks-section-products img:hover {
+    width: 50%;
+    box-shadow: 0 20px 20px 0 rgba(0, 15, 30, .1);
+}
+
+.red-bull-sugarfree {
+    background-color: #0070b8;
+    color: #ffffff;
+}
+
+.red-bull-yellow {
+    background-color: #ffcd00;
+    color: #ffffff;
+}
+
+/* Post Section */
+.post-section-header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.post-section-listing {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.post-section-card {
+    box-shadow: 0 8px 12px 0 rgba(0, 15, 30, .039);
+    border-radius: 10px;
+    background-color: #ffffff;
+    height: 26rem;
+    width: 20rem !important;
+    padding: 0px;
+    border: 0px;
+    overflow: hidden;
+    text-align: start;
+}
+
+.post-section-card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 60%;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.post-section-card-image {
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.post-section-card-half img {
+    height: 50%;
+    object-fit: cover;
+}
+
+.post-section-card img:hover {
+    transform: scale(1.05);
+}
+
+.post-section-card-content h5 {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.post-section-card-content p {
+    font-weight: 400;
+    font-size: .75rem;
+    color: #b5b7bc;
+}
+
+.post-section-card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-section-card-bottom h4 {
+    font-weight: 700;
+    font-size: .7rem;
+    color: #666f78;
+}
+
+.post-section-card-bottom p {
+    font-size: .65rem;
+    color: #666f78;
+}
