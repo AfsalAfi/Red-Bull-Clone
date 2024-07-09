@@ -25,7 +25,7 @@
     .home-sliders,
     .home-sliders img,
     .home-sliders video {
-        height: 80vh;
+        height: 87vh;
     }
 }
 
@@ -34,7 +34,7 @@
     .home-sliders,
     .home-sliders img,
     .home-sliders video {
-        height: 90vh;
+        height: 97vh;
     }
 }
 
@@ -58,7 +58,7 @@
 .slider-each-image::after {
     content: "";
     position: absolute;
-    bottom: 5vh;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 60%;
@@ -79,14 +79,66 @@
 }
 
 @media (max-width: 650px) {
-    .slider-image-content-header h1 {
-        font-size: 1rem;
+    .slider-image-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 0rem;
         width: 100%;
     }
-    
-    .slider-image-content-header h4 {
-        font-size: .7rem;
+
+    .slider-image-content-header h1 {
+        font-size: 1rem;
+        padding: 10px 10px;
     }
+
+    .slider-image-content-header h4 {
+        display: none;
+    }
+
+    .slider-image-content-footer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .slider-image-content-footer button {
+        padding: 5px 10px;
+        font-weight: 500;
+        font-size: .6rem;
+        margin-top: 10px;
+    }
+
+    .slider-image-content-footer p {
+        font-size: .5rem;
+        font-weight: 450;
+    }
+
+    .custom-img img {
+        height: 6rem;
+        width: auto;
+        position: absolute;
+        top: -18vh;
+        transform: translateX(-50%);
+    }
+
+    .user-id {
+        display: none;
+    }
+
+    .indian-flag {
+        display: flex;
+        gap: 10px;
+    }
+
+    .indian-flag img {
+        width: 1rem;
+        height: .7rem;
+    }
+
 }
 
 @media (min-width: 650px) and (max-width: 991.98px) {
@@ -94,9 +146,59 @@
         font-size: 1.7rem;
         width: 90%;
     }
-    
+
     .slider-image-content-header h4 {
         font-size: .9rem;
+        width: 80%;
+    }
+
+    .slider-image-content-footer p {
+        font-size: 1.1rem;
+        font-weight: 550;
+        padding: 10px 0px;
+    }
+
+    .slider-image-content-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        gap: 10px
+    }
+
+    .slider-image-content-footer button {
+        padding: 10px 10px;
+        font-weight: 500;
+        font-size: .8rem;
+    }
+
+    .slider-image-content-footer img {
+        width: 8%;
+        height: auto;
+    }
+
+    .custom-img img {
+        width: 2rem;
+        height: auto;
+    }
+
+    .indian-flag {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .indian-flag img {
+        width: 1.2rem;
+        height: 0.7rem;
+    }
+
+    .user-id {
+        background-color: #1e2329;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
     }
 }
 
@@ -109,6 +211,49 @@
     .slider-image-content-header h4 {
         font-size: 1.1rem;
     }
+
+    .slider-image-content-footer p {
+        font-size: 1.1rem;
+        font-weight: 550;
+        padding: 10px 0px;
+    }
+
+    .slider-image-content-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    .slider-image-content-footer button {
+        padding: 10px 25px;
+        font-weight: 500;
+    }
+
+    .slider-image-content-footer img {
+        width: 8%;
+        height: auto;
+    }
+
+    .custom-img img {
+        width: 30%;
+        height: auto;
+    }
+
+    .indian-flag img {
+        width: 40%;
+        height: auto;
+    }
+
+    .user-id {
+        background-color: #1e2329;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+
+
 }
 
 .slider-image-content-header h4 {
@@ -117,43 +262,17 @@
     padding: 10px 0px 15px 0px;
 }
 
-
-.slider-image-content-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 80%;
-}
-
 .slider-image-content-footer button {
     background-color: #db0a41;
     border: 0px;
     border-radius: 20px;
-    padding: 10px 25px;
     color: white;
-    font-weight: 500;
 }
 
 .slider-image-content-footer p {
     padding: 0px;
     margin: 0px;
     color: #c1c0be;
-    font-size: 1.1rem;
-    font-weight: 550;
-    padding: 10px 0px;
-}
-
-.slider-image-content-footer img {
-    height: 50px;
-    width: 40px;
-}
-
-.user-id {
-    background-color: #1e2329;
-    border-radius: 100px;
-    display: flex;
-    align-items: center;
-    padding: 10px;
 }
 
 .user-id img {
