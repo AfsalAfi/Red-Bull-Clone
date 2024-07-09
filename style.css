@@ -128,12 +128,15 @@
         font-weight: 450;
     }
 
-    .custom-img img {
-        height: 6rem;
-        width: auto;
+    .custom-img {
         position: absolute;
-        top: -18vh;
-        transform: translateX(-50%);
+        top: -20vh;
+
+    }
+
+    .custom-img img {
+        height: 8rem;
+        width: auto;
     }
 
     .user-id {
