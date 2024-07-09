@@ -39,7 +39,7 @@
     rightbtn.addEventListener('click',()=>{
         document.getElementById("scroll-right").style.display = "none"
         document.getElementById("scroll-left").style.display = "block"
-        slider.scroll(800,0);
+            slider.scroll(800,0);
         
     })
     

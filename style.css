@@ -12,6 +12,7 @@
 .home-sliders img {
     width: 100%;
     object-fit: cover;
+    animation: scaleAnimation 8s forwards;
 }
 
 .home-sliders video {
@@ -20,12 +21,22 @@
 }
 
 
+@keyframes scaleAnimation {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
 @media (max-width: 650px) {
 
     .home-sliders,
     .home-sliders img,
     .home-sliders video {
-        height: 87vh;
+        height: 80vh;
     }
 }
 
@@ -34,7 +45,7 @@
     .home-sliders,
     .home-sliders img,
     .home-sliders video {
-        height: 97vh;
+        height: 90vh;
     }
 }
 
@@ -222,7 +233,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 80%;
+        width: 500px;
     }
 
     .slider-image-content-footer button {
@@ -236,13 +247,19 @@
     }
 
     .custom-img img {
-        width: 30%;
+        width: 3rem;
         height: auto;
     }
 
+    .indian-flag {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
     .indian-flag img {
-        width: 40%;
-        height: auto;
+        width: 1.2rem;
+        height: 0.7rem;
     }
 
     .user-id {
@@ -252,8 +269,6 @@
         align-items: center;
         padding: 10px;
     }
-
-
 }
 
 .slider-image-content-header h4 {
@@ -434,12 +449,25 @@
 
 .drinks-section-listing {
     display: flex;
-    justify-content: start;
     align-items: center;
 }
 
+
+@media (max-width: 1441px) {
+    .drinks-section-listing {
+        justify-content: start;
+    }
+}
+
+@media (min-width: 1441px) {
+    .drinks-section-listing {
+        justify-content: center;
+    }
+}
+
 .drinks-section-products {
-    height: 26rem;
+    height: 400px;
+    width: 300px !important;
     padding: 0px !important;
     border: 0px !important;
     background-color: #ffffff !important;
@@ -491,7 +519,6 @@
 .drinks-collection {
     position: relative;
     cursor: pointer;
-    /* overflow-x: scroll; */
 }
 
 .drinks-section-scroll-btn {
@@ -576,10 +603,17 @@
     box-shadow: 0 8px 12px 0 rgba(0, 15, 30, .039);
     border-radius: 10px;
     background-color: #ffffff;
-    height: 26rem;
-    width: 20rem;
+    height: 400px;
+    width: 300px !important;
     overflow: hidden;
     text-align: start;
+}
+
+.post-section-card-special h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
 }
 
 .post-section-card img {
