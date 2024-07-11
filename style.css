@@ -455,14 +455,13 @@
     align-items: center;
 }
 
-
-@media (max-width: 1441px) {
+@media (max-width: 1600px) {
     .drinks-section-listing {
         justify-content: start;
     }
 }
 
-@media (min-width: 1441px) {
+@media (min-width: 1600p) {
     .drinks-section-listing {
         justify-content: center;
     }
